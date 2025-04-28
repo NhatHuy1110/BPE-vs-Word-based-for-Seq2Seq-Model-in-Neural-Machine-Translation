@@ -102,8 +102,21 @@ tokenizer_vi.train_from_iterator(train_data["vi"], trainer=trainer_vi)
 | Seq2Seq Model using BPE Tokenization         |    56.574     |     0.0685    |
 | Seq2Seq Model using Word-based Tokenization  |    54.617     |     0.0619    |
 
+# BPE Result:
 ![Seq2Seq Model using BPE Tokenization](bpe.jpg)
+- Source (English): When I was little , I thought my country was the best on the planet , and I grew up singing a song called &quot; Nothing To Envy . &quot;
+  
+- Expected Translation (Vietnamese): Khi tôi còn nhỏ , Tôi nghĩ rằng BắcTriều Tiên là đất nước tốt nhất trên thế giới và tôi thường hát bài &quot; Chúng ta chẳng có gì phải ghen tị . &quot;
+  
+- Model Translation: Khi tôi nhỏ , tôi nghĩ rằng tôi là đất nước là một thế giới tốt đẹp nhất và tôi đã hát rằng tôi gọi là & quot ; Ain
+
+# Word-based Result:
 ![Seq2Seq Model using Word-based Tokenization](word-based.jpg)
+- Source (English): When I was little , I thought my country was the best on the planet , and I grew up singing a song called &quot; Nothing To Envy . &quot;
+  
+- Expected Translation (Vietnamese): Khi tôi còn nhỏ , Tôi nghĩ rằng BắcTriều Tiên là đất nước tốt nhất trên thế giới và tôi thường hát bài &quot; Chúng ta chẳng có gì phải ghen tị . &quot;
+  
+- Model Translation: Khi tôi lớn , tôi nghĩ là đất nước của tôi sống , và và tôi tôi tôi tôi gọi là & quot ; Tôi & quot ; Tôi đang
 
 
 # 🔴Note: All images illustrating the result and data of Seq2Seq model using BPE and Word-based Tokenization in the .ipynb file, or you can run to test by yourself.
